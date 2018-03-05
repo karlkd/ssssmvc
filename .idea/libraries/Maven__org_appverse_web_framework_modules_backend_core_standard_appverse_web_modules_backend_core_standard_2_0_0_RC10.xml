@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.appverse.web.framework.modules.backend.core.standard:appverse-web-modules-backend-core-standard:2.0.0-RC10">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/appverse/web/framework/modules/backend/core/standard/appverse-web-modules-backend-core-standard/2.0.0-RC10/appverse-web-modules-backend-core-standard-2.0.0-RC10.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/appverse/web/framework/modules/backend/core/standard/appverse-web-modules-backend-core-standard/2.0.0-RC10/appverse-web-modules-backend-core-standard-2.0.0-RC10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/appverse/web/framework/modules/backend/core/standard/appverse-web-modules-backend-core-standard/2.0.0-RC10/appverse-web-modules-backend-core-standard-2.0.0-RC10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
