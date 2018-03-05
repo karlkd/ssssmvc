@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Created by 69412 on 2018/3/1.
  */
 @Controller
-@RequestMapping("/home")
 public class HellowController {
     //添加一个日志器
     private static final Logger logger = LoggerFactory.getLogger(HellowController.class);
@@ -23,6 +22,7 @@ public class HellowController {
         logger.info("the first jsp pages");
         //返回一个index.jsp这个视图
         return "index";
+
     }
 }
 

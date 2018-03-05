@@ -17,9 +17,11 @@
         <!--<property name="prefix" value="/WEB-INF/"/>-->
         <!--<property name="suffix" value=".jsp"/>-->
     <!--</bean>-->
+    <mvc:resources mapping="/css/**" location="/css/"/>
+    <mvc:resources mapping="/*.html" location="/"/>
     <bean id="ViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/WEB-INF/"/><!--设置JSP文件的目录位置-->
+        <property name="prefix" value="/WEB-INF/jsp/"/><!--设置JSP文件的目录位置-->
         <property name="suffix" value=".jsp"/>
     </bean>
 
