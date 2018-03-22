@@ -34,6 +34,7 @@
     <okhttp-version>2.7.5</okhttp-version>
     <gson-version>2.6.2</gson-version>
     <jodatime-version>2.9.3</jodatime-version>
+    <lombok.version>1.16.14</lombok.version>
   </properties>
 
   <dependencies>
@@ -77,8 +78,8 @@
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
-      <artifactId>com.springsource.slf4j.org.apache.commons.logging</artifactId>
-      <version>1.5.6</version>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.19</version>
     </dependency>
 
     <dependency>
@@ -130,11 +131,18 @@
       <scope>test</scope>
     </dependency>
 
+    <!--<dependency>-->
+      <!--<groupId>org.slf4j</groupId>-->
+      <!--<artifactId>slf4j-api</artifactId>-->
+      <!--<version>1.7.5</version>-->
+    <!--</dependency>-->
+
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-      <version>1.5.5</version>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
     </dependency>
+
   </dependencies>
 
 </project>

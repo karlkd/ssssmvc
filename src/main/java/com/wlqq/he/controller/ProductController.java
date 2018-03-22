@@ -1,12 +1,17 @@
 package com.wlqq.he.controller;
 
+import com.wlqq.he.common.JsonResponse;
 import com.wlqq.he.domain.Product;
 import com.wlqq.he.form.ProductForm;
+import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
 
@@ -14,6 +19,7 @@ import java.math.BigDecimal;
  * Created by 69412 on 2018/3/5.
  */
 @Controller
+@Slf4j
 public class ProductController {
     private static final Log logger = LogFactory.getLog(ProductController.class);
 
@@ -35,9 +41,7 @@ public class ProductController {
             product.setPrice(new BigDecimal(productForm.getPrice()));
         } catch (NumberFormatException e) {
         }
-
         // add product
-
         model.addAttribute("product", product);
         return "ProductDetails";
     }
