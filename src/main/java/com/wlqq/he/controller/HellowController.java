@@ -18,7 +18,7 @@ public class HellowController {
 
     //映射一个action
     @RequestMapping(value = "/index",method = RequestMethod.GET)
-    public  String index(){
+    public String index(){
         //输出日志文件
         logger.info("the first jsp pages");
         //返回一个index.jsp这个视图
